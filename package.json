@@ -4,7 +4,7 @@
   "description": "Estudo e reimplementação do https://www.tabnews.com.br desenvolvidas através do https://curso.dev",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run services:up && next dev",
+    "dev": "./init-dev.sh",
     "services:up": "docker compose -f infra/compose.yml up -d",
     "services:stop": "docker compose -f infra/compose.yml stop",
     "services:down": "docker compose -f infra/compose.yml down",
