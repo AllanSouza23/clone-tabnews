@@ -1,5 +1,4 @@
 import { Client } from "pg";
-import { database, password } from "pg/lib/defaults";
 
 async function query(queryObject) {
   const client = new Client({
