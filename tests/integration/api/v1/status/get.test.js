@@ -26,7 +26,7 @@ test("GET to /api/v1/status should return 200", async () => {
   expect(databaseProps.opened_connections).toEqual(1);
   const openedConnections = databaseProps.opened_connections;
 
-  expectedDatabaseProps = JSON.stringify({
+  const expectedDatabaseProps = JSON.stringify({
     version: databaseVersion,
     max_connections: maxConnections,
     opened_connections: openedConnections,
